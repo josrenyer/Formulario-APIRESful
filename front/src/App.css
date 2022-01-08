@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(rgba(167,218,208,0.75), rgba(5,7,12,0.75)),
+  url("./Imagen/data.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App div{
+  border: solid 1px black;
+  width: 50%;
+  margin: auto;
+}
+
+
+.App div form{
+  margin: 10px 10px;
+  text-align: left;
+
+}
+
+.App div form label{
+  margin-right: 5px;
+}
+
+.App div form input{
+
+  margin-bottom: 10px;
+}
+
+.App div form select{
+
+  margin-bottom: 10px;
+}
+
+
+
+.App div form button{
+
+  margin-left: 50%;
+
+}
+
+.App button{
+  margin-top: 10px;
+}
+
+.Data{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.Data h1{
+  margin-bottom: 30px;
+}
+
+.Data div{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+
+.Data div ul{
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.Data button{
+  margin-top: 20px;
+}
