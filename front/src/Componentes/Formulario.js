@@ -55,16 +55,14 @@ export default function Formulario() {
     if(inputBody.nombre==="" || inputBody.apellido==="" || inputBody.edad===""){
       return alert("Por favor rellene todos los campos")
     }else{
-    alert("Datos agregados a la DB")
     //console.log(inputBody)
     axios.post(`http://localhost:3001/datos`, inputBody)
+    alert("Datos agregados a la DB")
     setInputBody({
-      name:"",
+      nombre:"",
       apellido:"",
-      edad:"",
-      pais:""
     })
-  }
+    }
   }
 
     useEffect(()=>{
@@ -84,7 +82,7 @@ export default function Formulario() {
             <input type="text" placeholder="Ingrese el Apellido" name="apellido" onChange={e=>handelInput(e)}/>
               <br/>
             <label>Edad</label>
-            <input type="number" placeholder="Ingrese el nombre" name="edad" onChange={e=>handelInput(e)}/>
+            <input type="number" placeholder="Edad" name="edad" onChange={e=>handelInput(e)}/>
               <br/>
             <label>Pais</label>
             <select name="pais" onChange={e=>handelSelect(e)}>
