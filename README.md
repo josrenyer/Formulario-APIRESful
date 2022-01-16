@@ -4,12 +4,23 @@ En este proyecto se realizo con  `node.js`, una base de Datos en `PostgreSQL` co
 
 ## Informacion
 
-Para poder probar el repositorio es necesario clonarlo y hacer `npm i`  tanto en la carpeta back como en la carpeta front, ademas de crea una base de datos en postgreSQL `Create database`.
+Para poder probar el repositorio es necesario clonarlo y hacer `npm i`  tanto en la carpeta back como en la carpeta front.
+
+En `back` crear un archivo llamado: `.env` que tenga la siguiente forma:
+
+```
+DB_USER=usuariodepostgres
+DB_PASSWORD=passwordDePostgres
+DB_HOST=localhost
+```
+
+Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
+
+ ademas de crea una base de datos en postgreSQL `Create database`.
 
 ```sql
 CREATE DATABASE demo;
 ```
-
 
 luego de haber creado la base de datos solo queda hacer `npm start` tanto en el la carpeta back como en la carpeta front 
 
